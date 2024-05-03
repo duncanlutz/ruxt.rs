@@ -12,4 +12,4 @@ categories = ["web-programming", "web-programming::http-server"]
 
 
 [dependencies]
-ruxt_macros = { version = "0.1.0" }
+ruxt_macros = { version = "0.1.1" }
