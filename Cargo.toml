@@ -1,0 +1,15 @@
+[package]
+name = "ruxt"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "An Actix-based Rust framework for building HTMX applications."
+repository = "https://github.com/duncanlutz/Ruxt"
+homepage = "https://ruxt.rs"
+readme = "README.md"
+keywords = ["actix", "htmx", "framework", "web", "file-based-routing", "ruxt"]
+categories = ["web-programming", "web-programming::http-server"]
+
+
+[dependencies]
+ruxt_macros = { version = "0.1.0" }
