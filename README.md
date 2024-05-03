@@ -7,7 +7,7 @@ This project is still in its early stages and is not recommended for production 
 Add the following to your `Cargo.toml`:
 ```toml
 [dependencies]
-ruxt = "0.1.0"
+ruxt = "0.1.1"
 ```
 
 ## Usage

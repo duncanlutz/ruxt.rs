@@ -1,6 +1,6 @@
 [package]
 name = "ruxt"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "An Actix-based Rust framework for building HTMX applications."
