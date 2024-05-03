@@ -1,5 +1,5 @@
 # Ruxt
-Ruxt is a Rust web framework written on top of Actix-web. It was written to make it easier to write plain HTML web applications in Rust, specifically utilizing the HTMX library.
+Ruxt is a Rust web framework written on top of Actix-web. It was written to make it easier to write plain HTML web applications in Rust, specifically utilizing the HTMX library!
 
 This project is still in its early stages and is not recommended for production use.
 
