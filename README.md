@@ -10,6 +10,36 @@ Add the following to your `Cargo.toml`:
 ruxt = "0.1.0"
 ```
 
+## Usage
+1. Create a new project with the following command:
+```bash
+cargo new --bin my_project
+```
+2. Create a new directory called `pages` in the root of your project.
+3. Create a new file called `index.rs` in the `pages` directory.
+4. Add the following code to `index.rs`:
+```rust
+use actix_web::{HttpResponse, Responder};
+pub async fn index() -> impl Responder {
+    HttpResponse::Ok().body("Hello, World!")
+}
+```
+5. Add the following code to your `main.rs` file:
+```rust
+#[ruxt::main]
+async fn main() -> std::io::Result<()> {
+   let test_data = "Hello, World!";
+   HttpServer::new(move || App::new().app_data(test_data.to_string()))
+   .bind(("0.0.0.0", 8080))?
+   .run()
+   .await
+}
+```
+6. Run your project with the following command:
+```bash
+cargo run
+```
+
 ## Current Features
 - [x] Basic file-based routing
 
@@ -53,37 +83,6 @@ Basically, you can play with this, but shouldn't deploy anything with it yet.
 Ruxt uses a file-based routing system.
 
 This is accomplished using a custom proc-macro that reads the contents of the `pages` directory and generates a new `main` function that creates a new Actix-web server with routes for each file in the `pages` directory.
-
-## Usage
-1. Create a new project with the following command:
-```bash
-cargo new --bin my_project
-```
-2. Create a new directory called `pages` in the root of your project.
-3. Create a new file called `index.rs` in the `pages` directory.
-4. Add the following code to `index.rs`:
-```rust
-use actix_web::{HttpResponse, Responder};
-pub async fn index() -> impl Responder {
-    HttpResponse::Ok().body("Hello, World!")
-}
-```
-5. Add the following code to your `main.rs` file:
-```rust
-#[ruxt::main]
-async fn main() -> std::io::Result<()> {
-   let test_data = "Hello, World!";
-   HttpServer::new(move || App::new().app_data(test_data.to_string()))
-   .bind(("0.0.0.0", 8080))?
-   .run()
-   .await
-}
-```
-6. Run your project with the following command:
-```bash
-cargo run
-```
-7. Visit `http://localhost:8080` in your browser to see the output.
 
 ## License
 This project is licensed under the MIT license.
