@@ -7,7 +7,7 @@ description = "An Actix-based Rust framework for building HTMX applications."
 repository = "https://github.com/duncanlutz/Ruxt"
 homepage = "https://ruxt.rs"
 readme = "README.md"
-keywords = ["actix", "htmx", "framework", "web", "file-based-routing", "ruxt"]
+keywords = ["actix", "htmx", "framework", "web", "ruxt"]
 categories = ["web-programming", "web-programming::http-server"]
 
 
