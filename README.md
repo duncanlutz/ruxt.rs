@@ -12,7 +12,7 @@ cargo add ruxt
 Or add the following to your `Cargo.toml` file:
 ```toml
 [dependencies]
-ruxt = "0.1.3"
+ruxt = "0.1.2"
 ```
 
 ## Getting Started
