@@ -1,6 +1,6 @@
 [package]
 name = "ruxt"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license = "MIT"
 description = "An Actix-based Rust framework for building HTMX applications."
@@ -12,4 +12,4 @@ categories = ["web-programming", "web-programming::http-server"]
 
 
 [dependencies]
-ruxt_macros = { version = "0.1.1" }
+ruxt_macros = { version = "0.1.4" }
