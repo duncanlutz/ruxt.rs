@@ -24,7 +24,7 @@ cargo install create-ruxt-app
 
 Then, create a new project with the following command:
 ```bash
-cargo create-ruxt-app {project_name}
+create-ruxt-app {project_name}
 ```
 
 This will create a new project with the following structure:
